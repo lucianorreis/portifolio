@@ -1,13 +1,15 @@
 import React from 'react';
-import 'global.module.scss'
+import './global.scss';
+import { Portfolio } from './components/Portfolio/portfolio';
 
 
-export function App() {
+
+function App(){
   return (
-    <div className='App'>
-      <h1>Olá Mundo!</h1>
-    </div>
+    <>
+      <Portfolio />
+    </>
   );
 }
 
-
+export default App;

@@ -1,0 +1,31 @@
+.CenterBar {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+
+  height: 100%;
+  width: 60%;
+
+  .linguagens {
+    display: block;
+    top: 80%;
+
+    height: 70px;
+
+    ul {
+      display: flex;
+      height: 50px;
+      width: 600px;
+      margin: auto auto;
+
+      flex-flow: row wrap;
+      justify-content: center;
+
+      list-style: none;
+      gap: 1rem;
+
+      background-color: rgb(255, 255, 255);
+      border-radius: 40px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.badge {
+    height: 100%;
+    width: 20%;
+
+    .myName {
+      display: flex;
+      height: 6.8rem;
+      width: 5rem;
+
+      flex-flow: column;
+
+      margin: 3rem 2rem;
+
+      font-size: 2rem;
+
+      p::before {
+        display: block;
+        content: "";
+        background-color: white;
+        color: white;
+
+        height: 10rem;
+        width: 2px;
+
+        transform: translate(-10px, 90%);
+      }
+      p::after {
+        display: block;
+        content: "Front-End Developer";
+        color: white;
+        font-size: small;
+        margin-left: 1rem;
+        height: 1rem;
+        width: 7rem;
+      }
+    }
+  }
