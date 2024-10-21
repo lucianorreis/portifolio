@@ -13,6 +13,7 @@
     height: 70px;
 
     ul {
+      animation: is-carrossel infinte 5s ;
       display: flex;
       height: 50px;
       width: 600px;
@@ -24,7 +25,7 @@
       list-style: none;
       gap: 1rem;
 
-      background-color: rgb(255, 255, 255);
+      border: 1px solid rgb(0, 0, 0);
       border-radius: 40px;
     }
   }

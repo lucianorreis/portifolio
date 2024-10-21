@@ -1,26 +1,26 @@
 import "./rightBar.scss";
-import linkedinImg from "../../../assets/LinkedIn.png";
-import githubImg from "../../../assets/github.png";
+import linkedinImg from "../../../assets/LinkedinIcons/icons8-linkedin-150.png";
+import githubImg from "../../../assets/github100.png";
 
 export function RightBar() {
   return (
     <div className="rightBar">
-      <section>
-        <p>
+      <div id="top"></div>
+        <div id="middle">
           <ul>
             <li>
-              <a id="linkedin" href="/">
-                <img src={linkedinImg} alt="Linkedin Logo" width="70px" height="50px" />
+              <a className="contatos" href="https://www.linkedin.com/in/luciano-r-reis-1394512a8/" target="_blank" rel="noreferrer">
+                <img id="linkedin" className="imgcontatos" src={linkedinImg} alt="Linkedin Logo" />
               </a>
             </li>
             <li>
-              <a id="github" href="/">
-                <img src={githubImg} alt="Github Logo" width="70px" height="50px" />
+              <a className="contatos" href="https://github.com/lucianorreis" target="_blank" rel="noreferrer">
+                <img id="github" className="imgcontatos" src={githubImg} alt="Github Logo"/>
               </a>
             </li>
           </ul>
-        </p>
-      </section>
+        </div>
+        <div id="bottom"></div>
     </div>
   );
 }

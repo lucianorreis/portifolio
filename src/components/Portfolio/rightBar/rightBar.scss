@@ -1,30 +1,58 @@
 .rightBar {
-    border: 4px solid green;
     height: 100%;
     width: 20%;
     
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
 
-    p {
+    #top {
+        height: 20%;
+        width: 100%;
+    }
+    
+
+    #middle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
         font-size: small;
+        height: 60%;
         margin: 0 0 10px 10px ;
-
+        width: 100%;
         ul {
-            gap: 1rem;
             display: flex;
-            flex-direction: column;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            
+
             li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
                 list-style: none;
-
                 a {
+                    box-sizing: content-box;
                     text-decoration: none;
-                    color: rgb(255, 255, 255);
-
-                  
+                        #linkedin { transform: scale(0.3);}
+                        #github { transform:scale(0.4) }
+                        transition: 0.3s;
                     }
+                a:hover {
+                    transform: translate(-10px);
+                    transition: 0.3s;
+                }
                 
                 }
             }
         }
+    }
+    #bottom {
+        height: 20%;
+        width: 100%;
     }
