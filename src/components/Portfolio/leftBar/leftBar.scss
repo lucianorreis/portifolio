@@ -7,47 +7,67 @@
     align-items: center;
     
     .Top{
-      height: 10%;
+      height: 27%;
       width: 100%;
     }
 
-    .myName {
-      align-items: center;
+    .Middle {
       display: flex;
-      font-size: 2rem;
-      flex-flow: row;
+      align-items: center;
+      justify-content: center;
       height: 60%;
-      justify-content: flex-start;
       width: 100%;
 
-      p {
-        display: block;
-        width: 1px;
-        height: 100%;
-      }
-
-      p::before {
+      .myName {
+        align-items: center;
         display: flex;
-        content: "";
-        background-color: rgb(0, 0, 0);
-        color: rgb(0, 0, 0);
+        font-size: 1.6rem;
+        flex-flow: row wrap;
+        justify-content:center;
+        
+        ul {
+          display: flex;
+          flex-flow: column ;
 
-        height: 10rem;
-        width: 2px;
+          li.nome {
+          width: 10px;
+          list-style: none;
+          transition: 0.4s ;
+        }
+          li:hover {
+            transform: translatex(10px);
+            transition: 0.4s;
+          }
+        }
+        
+        
 
-        transform: translate(-10px, 90%);
+        ul::before {
+          box-sizing: content-box;
+          content: "";
+          display: flex;
+          position: fixed;
+          background-color: rgb(0, 0, 0);
+          color: rgb(0, 0, 0);
+          
+          height: 10rem;
+          width: 2px;
+  
+          transform: translate(-10px,-2rem);
+        }
+        ul::after {
+          display: block;
+          content: "Desenvolvedor Front-End";
+          color: rgb(0, 0, 0);
+          font-size: small;
+          transform: translatex(15px);
+          height: 1rem;
+          width: 9rem;
+        }
+  
       }
-      p::after {
-        display: block;
-        content: "Desenvolvedor Front-End";
-        color: rgb(0, 0, 0);
-        font-size: small;
-        transform: translatex(15px);
-        height: 1rem;
-        width: 9rem;
-      }
-
     }
+    
     #myPJ {
       align-items: flex-end;
       display: flex;

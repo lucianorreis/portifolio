@@ -6,17 +6,63 @@
   height: 100%;
   width: 60%;
 
+  .TopTop {
+    height: 10%;
+    width: 100%;
+  }
+
+  .Top {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+    
+    #darma {
+      animation: is-rotating 20s ease infinite;
+      border-radius: 50%;
+      background-image: url(../../../assets/pngwing.com.png);
+      background-size: 10rem;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      height: 10rem;
+
+      width: 10rem;
+
+      @keyframes is-rotating {
+        0%{
+          transform: rotate(0deg);
+        }
+        20% {
+          transform: rotate(390deg);
+        }
+        50%{
+          transform: rotate(360deg);
+        }
+        80% {
+          transform: rotate(390deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    }
+    
+  }
+
+
   .linguagens {
     display: flex;
     top: 80%;
 
-    height: 70px;
+    height: 20%;
 
     ul {
       animation: is-carrossel infinte 5s ;
       display: flex;
       height: 50px;
-      width: 600px;
+      width: 500px;
       margin: auto auto;
 
       flex-flow: row wrap;

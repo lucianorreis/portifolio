@@ -8,7 +8,7 @@
     flex-direction: column;
 
     #top {
-        height: 20%;
+        height: 10%;
         width: 100%;
     }
     
@@ -18,7 +18,7 @@
         align-items: center;
         justify-content: flex-end;
         font-size: small;
-        height: 60%;
+        height: 50%;
         margin: 0 0 10px 10px ;
         width: 100%;
         ul {
@@ -41,6 +41,7 @@
                     text-decoration: none;
                         #linkedin { transform: scale(0.3);}
                         #github { transform:scale(0.4) }
+                        #whatsapp { transform: scale(0.3)}
                         transition: 0.3s;
                     }
                 a:hover {
@@ -53,6 +54,6 @@
         }
     }
     #bottom {
-        height: 20%;
+        height: 10%;
         width: 100%;
     }

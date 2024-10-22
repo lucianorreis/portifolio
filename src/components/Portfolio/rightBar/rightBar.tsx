@@ -1,6 +1,7 @@
 import "./rightBar.scss";
 import linkedinImg from "../../../assets/LinkedinIcons/icons8-linkedin-150.png";
 import githubImg from "../../../assets/github100.png";
+import whatsapp from "../../../assets/whatsapp.png";
 
 export function RightBar() {
   return (
@@ -18,6 +19,7 @@ export function RightBar() {
                 <img id="github" className="imgcontatos" src={githubImg} alt="Github Logo"/>
               </a>
             </li>
+            <li><a className="contatos" href="https://api.whatsapp.com/send?phone=21997399927" target="_blank" rel="noreferrer"><img id="whatsapp" src={whatsapp} alt="whatsapp icon" /></a></li>
           </ul>
         </div>
         <div id="bottom"></div>
