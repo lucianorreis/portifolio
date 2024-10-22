@@ -1,5 +1,7 @@
 import "./centerBar.scss";
 import "../../../assets/pngwing.com.png"
+import htmlcss from "../../../assets/htmlcss.png"
+
 
 export function CenterBar() {
   return (
@@ -10,12 +12,12 @@ export function CenterBar() {
       </section>
       <section className="linguagens">
         <ul>
-          <li className="own"></li>
-          <li className="own"></li>
-          <li className="own"></li>
-          <li className="own"></li>
-          <li className="own"></li>
-          <li className="own"></li>
+          <li className="own"><img src={htmlcss} alt=""></img></li>
+          <li className="own"><img src="" alt="" /></li>
+          <li className="own"><img src="" alt="" /></li>
+          <li className="own"><img src="" alt="" /></li>
+          <li className="own"><img src="" alt="" /></li>
+          <li className="own"><img src="" alt="" /></li>
         </ul>
       </section>
     </div>
