@@ -5,7 +5,6 @@ import "./portfolio.scss";
 import { RightBar } from "./rightBar/rightBar";
 
 export function Portfolio() {
-
     return (
         <div className="principal">
             <div className="content">
